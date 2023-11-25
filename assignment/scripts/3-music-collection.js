@@ -8,22 +8,17 @@ function addToCollection (collection, title, artist, yearPublished){ // Create a
     albumArtist: artist,   // Adds albumArtist as object attribute
     releaseDate: yearPublished, // Adds releaseDate as object attribute
   };
-  collection.push(recordDetails); //Updates the passed in array with the recordDetails object
+  collection.push(recordDetails);  //Updates the passed in array with the recordDetails object
+  console.log(myCollection);
   return recordDetails;           //Returns object values
 };
 
 addToCollection(myCollection, "Jester's Dance", "In Flames", "1996");
-console.log(myCollection);
 addToCollection(myCollection, "White Crosses/Black Crosses", "Against Me!", "2010");
-console.log(myCollection);
 addToCollection(myCollection, "Brothers", "The Black Keys", "2010");
-console.log(myCollection);
 addToCollection(myCollection, "Panic", "Caravan Palace", "2012");
-console.log(myCollection);
 addToCollection(myCollection, "Imaginary Diseases", "Frank Zappa", "2006");
-console.log(myCollection);
 addToCollection(myCollection, "Predator's Potrait", "Soilwork", "2001");
-console.log(myCollection);
 addToCollection(myCollection, "Come Clarity", "In Flames", "2006");
 console.log(myCollection);
 
